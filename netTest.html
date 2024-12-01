@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Réseau - Dimitri Corp.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test sur les Réseaux - Dimitri Corp.</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. Dans une topologie maillée, quel est le principal avantage ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="A"> Facilité d'installation</label>
+                    <label><input type="radio" name="q1" value="B"> Coût réduit</label>
+                    <label><input type="radio" name="q1" value="C"> Fiabilité</label>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Quel rôle joue un pare-feu dans un réseau ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="A"> Transfert des données à l'extérieur</label>
+                    <label><input type="radio" name="q2" value="B"> Protection contre les intrusions</label>
+                    <label><input type="radio" name="q2" value="C"> Distribution d'adresses IP</label>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Que permet le protocole DHCP ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="A"> Gérer les fichiers sur un réseau</label>
+                    <label><input type="radio" name="q3" value="B"> Assigner dynamiquement des adresses IP</label>
+                    <label><input type="radio" name="q3" value="C"> Traduire des noms de domaine en adresses IP</label>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Quelle est la principale différence entre un schéma réseau logique et physique ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="A"> Le schéma logique montre le câblage réel</label>
+                    <label><input type="radio" name="q4" value="B"> Le schéma physique montre les emplacements réels des appareils</label>
+                    <label><input type="radio" name="q4" value="C"> Les deux montrent la même chose</label>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Quel protocole est utilisé pour envoyer des emails ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="A"> SMTP</label>
+                    <label><input type="radio" name="q5" value="B"> FTP</label>
+                    <label><input type="radio" name="q5" value="C"> HTTP</label>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. Quel est l'avantage principal de la fibre optique comparé au cuivre ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="A"> Moins coûteuse</label>
+                    <label><input type="radio" name="q6" value="B"> Plus rapide et résistante aux interférences</label>
+                    <label><input type="radio" name="q6" value="C"> Plus facile à installer</label>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. Pourquoi est-il important de documenter un réseau physique ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="A"> Pour économiser les coûts</label>
+                    <label><input type="radio" name="q7" value="B"> Pour faciliter la maintenance et le dépannage</label>
+                    <label><input type="radio" name="q7" value="C"> Pour mieux surveiller les utilisateurs</label>
+                </div>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. Quelle est la limitation principale d'une topologie en bus ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="A"> Le coût élevé</label>
+                    <label><input type="radio" name="q8" value="B"> La faiblesse face à une panne de câble unique</label>
+                    <label><input type="radio" name="q8" value="C"> La complexité d'installation</label>
+                </div>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. Quel appareil est utilisé pour distribuer des connexions dans un réseau local ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q9" value="A"> Pare-feu</label>
+                    <label><input type="radio" name="q9" value="B"> Switch</label>
+                    <label><input type="radio" name="q9" value="C"> Modem</label>
+                </div>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. Quelle est la fonction principale d'un routeur dans un réseau local ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q10" value="A"> Filtrer les paquets entrants et sortants</label>
+                    <label><input type="radio" name="q10" value="B"> Assigner des adresses IP aux appareils</label>
+                    <label><input type="radio" name="q10" value="C"> Relier des réseaux différents et gérer le trafic entre eux</label>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <h3>11. Quelle topologie est la plus résistante aux pannes ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q11" value="A"> Bus</label>
+                    <label><input type="radio" name="q11" value="B"> Étoile</label>
+                    <label><input type="radio" name="q11" value="C"> Maillée</label>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <h3>12. Quelle est la principale fonction d'un switch dans un réseau Ethernet ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q12" value="A"> Transmettre des données entre des réseaux distants</label>
+                    <label><input type="radio" name="q12" value="B"> Connecter des périphériques au réseau local en utilisant des adresses MAC</label>
+                    <label><input type="radio" name="q12" value="C"> Assigner des adresses IP aux appareils du réseau</label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <h3>13. Quelle est la principale différence entre un réseau privé (LAN) et un réseau public (WAN) ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q13" value="A"> Le LAN est plus sécurisé, tandis que le WAN est moins cher</label>
+                    <label><input type="radio" name="q13" value="B"> Le LAN couvre une petite zone géographique, tandis que le WAN couvre de plus grandes distances</label>
+                    <label><input type="radio" name="q13" value="C"> Le WAN utilise uniquement des câbles à fibre optique</label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <h3>14. Lequel des éléments suivants est un inconvénient majeur de la topologie en anneau ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q14" value="A"> Si un appareil tombe en panne, tout le réseau est affecté</label>
+                    <label><input type="radio" name="q14" value="B"> La configuration nécessite beaucoup de câblage</label>
+                    <label><input type="radio" name="q14" value="C"> Elle est coûteuse à déployer</label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <h3>15. Quelle est la fonction principale d'un serveur DNS ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q15" value="A"> Fournir des adresses IP aux clients du réseau</label>
+                    <label><input type="radio" name="q15" value="B"> Traduire des noms de domaine en adresses IP</label>
+                    <label><input type="radio" name="q15" value="C"> Gérer le trafic HTTP sur un site web</label>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <h3>16. Qu'est-ce qu'une adresse IP privée ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q16" value="A"> Une adresse accessible de n'importe où sur Internet</label>
+                    <label><input type="radio" name="q16" value="B"> Une adresse réservée pour une utilisation locale sur un réseau</label>
+                    <label><input type="radio" name="q16" value="C"> Une adresse qui permet de connecter des périphériques sans câble</label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <h3>17. Dans quel cas un réseau maillé est-il principalement utilisé ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q17" value="A"> Pour des réseaux locaux simples à déployer</label>
+                    <label><input type="radio" name="q17" value="B"> Pour des réseaux très résilients où la disponibilité est essentielle</label>
+                    <label><input type="radio" name="q17" value="C"> Pour les petites entreprises qui n'ont pas besoin de beaucoup de redondance</label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <h3>18. Quelle est la fonction du protocole TCP ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q18" value="A"> Assurer la transmission de données de manière fiable entre deux appareils</label>
+                    <label><input type="radio" name="q18" value="B"> Fournir une traduction d'adresses entre IPv4 et IPv6</label>
+                    <label><input type="radio" name="q18" value="C"> Permettre l'échange de courriels entre deux serveurs</label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <h3>19. Quelle est la principale différence entre IPv4 et IPv6 ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q19" value="A"> IPv4 utilise des adresses de 32 bits, tandis qu'IPv6 utilise 128 bits</label>
+                    <label><input type="radio" name="q19" value="B"> IPv4 est plus sécurisé que IPv6</label>
+                    <label><input type="radio" name="q19" value="C"> IPv4 permet un nombre illimité d'adresses</label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <h3>20. Quel est l'objectif principal d'un VPN ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q20" value="A"> Accélérer la connexion Internet</label>
+                    <label><input type="radio" name="q20" value="B"> Crypter la connexion Internet et masquer l'adresse IP</label>
+                    <label><input type="radio" name="q20" value="C"> Assigner des adresses IP privées aux appareils</label>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="question">
+                <h3>21. Qu'est-ce qu'un VLAN ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q21" value="A"> Un type de réseau privé virtuel utilisé sur Internet</label>
+                    <label><input type="radio" name="q21" value="B"> Un réseau local virtuel permettant de séparer les segments de réseau au sein d'un même LAN</label>
+                    <label><input type="radio" name="q21" value="C"> Un appareil qui permet de connecter des réseaux distants</label>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question">
+                <h3>22. Quel est le rôle d'un modulateur-démodulateur (modem) ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q22" value="A"> Convertir des signaux numériques en signaux analogiques et vice versa</label>
+                    <label><input type="radio" name="q22" value="B"> Assigner des adresses IP à des périphériques</label>
+                    <label><input type="radio" name="q22" value="C"> Filtrer les données sur un réseau</label>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="question">
+                <h3>23. Quelle couche du modèle OSI est responsable du routage des paquets ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q23" value="A"> Couche 3 : Réseau</label>
+                    <label><input type="radio" name="q23" value="B"> Couche 2 : Liaison de données</label>
+                    <label><input type="radio" name="q23" value="C"> Couche 7 : Application</label>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question">
+                <h3>24. Qu'est-ce qu'un PoE (Power over Ethernet) ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q24" value="A"> Une technologie permettant de transmettre de l'énergie électrique via un câble Ethernet</label>
+                    <label><input type="radio" name="q24" value="B"> Un type de câble Ethernet spécialement conçu pour les réseaux à haut débit</label>
+                    <label><input type="radio" name="q24" value="C"> Un protocole pour gérer les connexions sans fil</label>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question">
+                <h3>25. Quelle est la principale fonction d'une adresse MAC ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q25" value="A"> Assigner une adresse IP dynamique à chaque périphérique</label>
+                    <label><input type="radio" name="q25" value="B"> Identifier de manière unique chaque périphérique au niveau de la couche de liaison de données</label>
+                    <label><input type="radio" name="q25" value="C"> Permettre la communication entre différents réseaux</label>
+                </div>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question">
+                <h3>26. Quelle est la fonction de l'ARP (Address Resolution Protocol) ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q26" value="A"> Convertir les adresses IP en adresses MAC</label>
+                    <label><input type="radio" name="q26" value="B"> Assigner des adresses IP aux périphériques d'un réseau local</label>
+                    <label><input type="radio" name="q26" value="C"> Fournir une adresse DNS à un appareil</label>
+                </div>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question">
+                <h3>27. Quelle est la différence entre TCP et UDP ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q27" value="A"> TCP garantit la livraison des paquets, tandis qu'UDP est plus rapide sans garantie de livraison</label>
+                    <label><input type="radio" name="q27" value="B"> UDP est plus sécurisé que TCP</label>
+                    <label><input type="radio" name="q27" value="C"> TCP est utilisé pour la communication entre deux réseaux, tandis qu'UDP est pour la communication locale</label>
+                </div>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="question">
+                <h3>28. Quel est le but de la couche de transport dans le modèle OSI ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q28" value="A"> Gérer l'envoi des données entre les appareils de différents réseaux</label>
+                    <label><input type="radio" name="q28" value="B"> Fournir la gestion des sessions et la synchronisation des données</label>
+                    <label><input type="radio" name="q28" value="C"> Assurer la fiabilité de la transmission de données entre hôte et hôte</label>
+                </div>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question">
+                <h3>29. Quelle est l'une des principales fonctions du modèle OSI ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q29" value="A"> Sécuriser les échanges de données entre les appareils</label>
+                    <label><input type="radio" name="q29" value="B"> Normaliser les protocoles et les services dans les réseaux de communication</label>
+                    <label><input type="radio" name="q29" value="C"> Gérer les adresses IP dans un réseau</label>
+                </div>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question">
+                <h3>30. Qu'est-ce qu'un DNS ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q30" value="A"> Un service qui traduit les adresses IP en noms de domaine</label>
+                    <label><input type="radio" name="q30" value="B"> Un dispositif qui connecte des réseaux locaux entre eux</label>
+                    <label><input type="radio" name="q30" value="C"> Un protocole de transfert de fichiers sur Internet</label>
+                </div>
+            </div>
+
+            <!-- Question 31 -->
+            <div class="question">
+                <h3>31. Quelle est la principale différence entre un hub et un switch ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q31" value="A"> Un hub envoie les données à tous les appareils, tandis qu'un switch envoie les données uniquement à l'appareil destiné</label>
+                    <label><input type="radio" name="q31" value="B"> Un switch est plus lent qu'un hub</label>
+                    <label><input type="radio" name="q31" value="C"> Un hub utilise des adresses IP pour envoyer des données, tandis qu'un switch utilise des adresses MAC</label>
+                </div>
+            </div>
+
+            <!-- Question 32 -->
+            <div class="question">
+                <h3>32. Quel type de câble est couramment utilisé pour les connexions Ethernet rapides ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q32" value="A"> Câble coaxial</label>
+                    <label><input type="radio" name="q32" value="B"> Câble fibre optique</label>
+                    <label><input type="radio" name="q32" value="C"> Câble twisted pair (paires torsadées)</label>
+                </div>
+            </div>
+
+            <!-- Question 33 -->
+            <div class="question">
+                <h3>33. Quel protocole est utilisé pour sécuriser les connexions HTTP ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q33" value="A"> FTP</label>
+                    <label><input type="radio" name="q33" value="B"> HTTPS</label>
+                    <label><input type="radio" name="q33" value="C"> SMTP</label>
+                </div>
+            </div>
+
+            <!-- Question 34 -->
+            <div class="question">
+                <h3>34. Dans un réseau local, quel appareil permet de relier des appareils à un seul point de connexion ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q34" value="A"> Routeur</label>
+                    <label><input type="radio" name="q34" value="B"> Modem</label>
+                    <label><input type="radio" name="q34" value="C"> Switch</label>
+                </div>
+            </div>
+
+            <!-- Question 35 -->
+            <div class="question">
+                <h3>35. Quel est le rôle du protocole IP ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q35" value="A"> Chiffrer les données échangées entre deux hôtes</label>
+                    <label><input type="radio" name="q35" value="B"> Assigner des adresses MAC aux périphériques</label>
+                    <label><input type="radio" name="q35" value="C"> Adresser les paquets de données aux destinations appropriées</label>
+                </div>
+            </div>
+
+            <!-- Question 36 -->
+            <div class="question">
+                <h3>36. Quel est le principal avantage d'un réseau sans fil (Wi-Fi) par rapport à un réseau câblé ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q36" value="A"> Il est plus rapide</label>
+                    <label><input type="radio" name="q36" value="B"> Il n'y a pas de câblage nécessaire et il offre une mobilité</label>
+                    <label><input type="radio" name="q36" value="C"> Il est plus sécurisé</label>
+                </div>
+            </div>
+
+            <!-- Question 37 -->
+            <div class="question">
+                <h3>37. Qu'est-ce qu'un réseau hybride ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q37" value="A"> Un réseau qui combine plusieurs technologies réseau, comme Ethernet et Wi-Fi</label>
+                    <label><input type="radio" name="q37" value="B"> Un réseau uniquement câblé</label>
+                    <label><input type="radio" name="q37" value="C"> Un réseau utilisé uniquement pour les connexions mobiles</label>
+                </div>
+            </div>
+
+            <!-- Question 38 -->
+            <div class="question">
+                <h3>38. Quelle est la différence entre un répéteur et un switch dans un réseau ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q38" value="A"> Un répéteur amplifie les signaux, un switch gère les adresses MAC</label>
+                    <label><input type="radio" name="q38" value="B"> Un switch amplifie les signaux, un répéteur gère les adresses IP</label>
+                    <label><input type="radio" name="q38" value="C"> Un répéteur permet la connexion de plusieurs appareils, un switch uniquement un seul</label>
+                </div>
+            </div>
+
+            <!-- Question 39 -->
+            <div class="question">
+                <h3>39. Quelle est l'utilité principale d'un firewall ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q39" value="A"> Gérer la bande passante sur un réseau</label>
+                    <label><input type="radio" name="q39" value="B"> Protéger un réseau en filtrant les paquets indésirables</label>
+                    <label><input type="radio" name="q39" value="C"> Fournir des adresses IP aux périphériques d'un réseau</label>
+                </div>
+            </div>
+
+            <!-- Question 40 -->
+            <div class="question">
+                <h3>40. Quel est le rôle principal de la couche de présentation dans le modèle OSI ?</h3>
+                <div class="answers">
+                    <label><input type="radio" name="q40" value="A"> Convertir les données pour que l'application puisse les comprendre</label>
+                    <label><input type="radio" name="q40" value="B"> Transmettre les données d'un appareil à un autre</label>
+                    <label><input type="radio" name="q40" value="C"> Assurer l'acheminement des paquets vers la destination</label>
+                </div>
+            </div>
+            <button type="button" onclick="checkAnswers()">Terminer le test</button>
+        </form>
+
+        <div id="results" class="results" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
